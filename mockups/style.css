@@ -1,0 +1,34 @@
+html, body, #content {
+  background-color: red;
+  height: 100%;
+}
+
+#header {
+  width:100%;
+  height:100px;
+  background-color: white;
+}
+
+#login-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#login-form-container {
+  width:550px;
+  height:100px;
+  background-color: white;
+}
+
+#login-section-container-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.centered-text {
+  text-align: center;
+}
