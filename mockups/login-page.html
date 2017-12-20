@@ -4,27 +4,60 @@
     <title>Booking System - Login!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8" />
   </head>
   <body>
-    <div id="header">
-      Company Name...
-    </div>
-    <div id="login-section-container">
-      <div id="login-section-container-content">
-        <div class="centered-text">
-          Please log in to find a tutor!
-        </div>
-        <div id="login-form-container">
-          <form>
-            <input type="text" name="" value="">
-            <input type="text" name="" value="">
-            <button type="button" name="button">Login</button>
-          </form>
-        </div>
-        <div class="centered-text">
-          If you don't have an account register now!
+    <div>
+      <div id="header">
+        <div id="navigation-wrapper">
+          <div id="navigation-bar">
+            <div id="company-name" >
+              <div id="logo">Booking System</div>
+            </div>
+            <div id="menu-item">
+              <a href="#">Menu item1</a>
+              <a href="#">Menu item2</a>
+            </div>
+          </div>
         </div>
       </div>
+
+
+      <div id="login-section-container">
+        <div id="login-section-container-content">
+
+          <div class="centered-text">
+            Please log in to find a tutor!
+          </div>
+
+          <div id="login-form-container">
+            <div class="login-form-column">
+              <div id="login-form-social-media-buttons">
+                <a id="btn-login-fb" href="https://www.facebook.com">Login with Facebook</a>
+                <a id="btn-login-linkedin" href="https://www.linkedin.com">Login with LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="login-form-column">
+              <div id="login-form">
+                <form>
+                  <input id ="username-field" type="text" name="Username or email address" placeholder="Username" >
+                  <input id ="password-field"type="text" name="Password" placeholder="Password" >
+                  <a class="forgot-pwd" href="#">Forgot Password?</a>
+                  <button type="button" name="button">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="centered-text">
+            If you don't have an account <a>Register now!</a>
+          </div>
+        </div>
+      </div>
+      Hello World...
     </div>
+    <footer>© Booking System 2017</footer>
   </body>
 </html>

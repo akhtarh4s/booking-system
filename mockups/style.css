@@ -1,25 +1,83 @@
-html, body, #content {
-  background-color: red;
+html, body {
+  background-color: #4dadf7;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+#logo {
+  text-decoration: none;
 }
 
 #header {
   width:100%;
-  height:100px;
+  height: 3em;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navigation-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#navigation-bar {
+  background-color: white;
+  width: 100em;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#company-name {
+  font-weight: bold;
+  font-size: 2em;
+  width:10em;
+  bottom: 5px;
+}
+
+#menu-item {
+  font-weight: bold;
+  font-size: 1.2em;
+  bottom: 5px;
+}
+
+
+#navigation-link{
+  font-weight: normal;
+  font-size: 2em;
+  align-items:baseline;
 }
 
 #login-section-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 30em;
+  background: url('./background.jpg');
+  background-size: cover;
 }
 
 #login-form-container {
   width:550px;
-  height:100px;
+  height:300px;
   background-color: white;
+  display: flex;
+  flex-flow: row;
+  align-content: space-between;
+  border-radius:10px;
 }
 
 #login-section-container-content {
@@ -31,4 +89,70 @@ html, body, #content {
 
 .centered-text {
   text-align: center;
+    padding: 7px;
+}
+
+.login-form-column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#login-form-social-media-buttons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 12em;
+}
+
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12em;
+  height: 100%;
+}
+
+#btn-login-fb {
+  background-color: #862e9c;
+  color: white;
+  border-radius:4px;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+}
+
+#btn-login-linkedin {
+  background-color: #1862ab;
+  color: white;
+  border-radius:4px;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+}
+
+
+#username-field{
+  margin: 3px;
+}
+
+#password-field{
+  margin: 3px;
+}
+
+.forgot-pwd{
+  display:block;
+  color: #495057;
+  font-size: 0.7em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: white;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
