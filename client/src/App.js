@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './Footer.js';
 import Header from './Header.js';
 import LoginForm from './LoginForm.js';
-import RegisterForm from './RegisterForm.js';
+import RegisterFormDemo from './RegisterFormDemo.js';
 
 export default() => {
     return (
@@ -10,7 +10,7 @@ export default() => {
             <Header/>
             <LoginForm/>
             <Footer/>
-            <RegisterForm/>
+            <RegisterFormDemo/>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 
 
 export default class LoginForm extends React.Component {
@@ -27,8 +27,9 @@ export default class LoginForm extends React.Component {
         console.log("remember me checked");
     }
 
-    onSubmitClicked = () => {
+    onSubmitClicked = (event) => {
         debugger;
+        event.preventDefault();
         this.setState({
             wasSubmitClicked: true
         });
@@ -46,9 +47,6 @@ export default class LoginForm extends React.Component {
                     wasSubmitClicked={this.state.wasSubmitClicked} />;
     }
 }
-
-
-
 
 const Form = (props) => {
     debugger;
