@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class RegisterFormDemo extends React.Component {
+export default class RegisterForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -84,11 +84,11 @@ const RegistrationForm = (props) => {
                         <form className={props.wasSubmitClicked ? ('was-validated') : ('needs-validation')} noValidate>
                             <div className="form-group">
                                 <label for="inputFirstName">First name</label>
-                                <input value={props.firstName} onChange={props.onFirstNameChange} type="inputFirstName" className="form-control" id="inputFirstName" aria-describedby="firstName" placeholder="Enter first name"/>
+                                <input value={props.firstName} onChange={props.onFirstNameChange} type="inputFirstName" className="form-control" id="inputFirstName" aria-describedby="firstName" placeholder="Enter first name" required/>
                             </div>
                             <div className="form-group">
                                 <label for="inputLastName">Last name</label>
-                                <input value={props.lastName} onChange={props.onLastNameChange} type="inputLastName" className="form-control" id="inputLastName" aria-describedby="emailHelp" placeholder="Enter last name"/>
+                                <input value={props.lastName} onChange={props.onLastNameChange} type="inputLastName" className="form-control" id="inputLastName" aria-describedby="emailHelp" placeholder="Enter last name" required/>
                             </div>
                             <div className="form-group">
                                 <label for="InputEmail1">Email address</label>

@@ -28,7 +28,6 @@ export default class LoginForm extends React.Component {
     }
 
     onSubmitClicked = (event) => {
-        debugger;
         event.preventDefault();
         this.setState({
             wasSubmitClicked: true

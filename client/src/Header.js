@@ -1,5 +1,8 @@
 import React from 'react';
 import './Header.css';
+import {
+  Link
+} from 'react-router-dom'
 
 export default() => {
     return (
@@ -12,10 +15,10 @@ export default() => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Log in <span className="sr-only">(current)</span></a>
+                            <Link to="/login"><a className="nav-link" href="#">Log in <span className="sr-only">(current)</span></a></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Register</a>
+                            <Link to="/register"><a className="nav-link" href="#">Register</a></Link>
                         </li>
                     </ul>
                 </div>
